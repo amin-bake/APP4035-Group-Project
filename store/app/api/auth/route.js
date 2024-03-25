@@ -1,5 +1,5 @@
-import { getServerSession } from "next-auth";
-import { authOptions } from "../lib/nextAuth";
+import { getServerSession, getServerSideProps } from "next-auth";
+import { authOptions } from "../../lib/nextAuth";
 import { NextResponse } from "next/server";
 
 

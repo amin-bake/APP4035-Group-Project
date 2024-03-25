@@ -1,9 +1,9 @@
 'use client';
-import { redirect } from "next/dist/server/api-utils";
+import { redirect } from "next/navigation";
 import { signOut } from "next-auth/react";
 
 export default function Logout(){
-    const logoutBtn = ()=>{
+    const logoutBtn = () => {
         signOut();
         redirect('/');
       }
